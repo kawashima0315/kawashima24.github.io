@@ -1,0 +1,46 @@
+//各ファイルは必ず登録済みの変数を最初に読み込みます
+//as *で読み込みファイル名を省略することができます
+@use "../global" as *;
+
+.footer{
+    font-family: $sans;
+    
+    &__ttl{
+        font-size: 40px;
+    }
+
+    &__subttl{
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    &__img{
+        width: 80px;
+    }
+
+    &__box{
+        margin-bottom: 30px;
+    }
+
+    &__item{
+        display: flex;
+        justify-content: center;
+       gap:120px;
+    }
+
+    &__company{
+        font-size: 30px;
+    }
+
+    &__box2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:50px;
+    }
+
+    &__copy{
+        text-align: center;
+        margin: 30px 0;
+    }
+}

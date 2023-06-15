@@ -1,0 +1,380 @@
+//各ファイルは必ず登録済みの変数を最初に読み込みます
+//as *で読み込みファイル名を省略することができます
+@use "../global" as *;
+
+#top {
+
+    background: #ececec;
+
+    .mv {
+        background-image: url(../images/mv.jpg);
+        background-size: cover;
+        height: 750px;
+        width: 1400px;
+        margin-top: 170px;
+        border-top-right-radius: 150px;
+
+        &__txt {
+            writing-mode: vertical-rl;
+            font-size: 50px;
+            line-height: 80px;
+            letter-spacing: 80px;
+            position: absolute;
+            top: 400px;
+            right: 140px;
+            font-family: $sans;
+        }
+
+        &__img {
+            width: 150px;
+            height: 390px;
+            object-fit: cover;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: -1;
+            border-bottom-left-radius: 150px;
+        }
+
+        
+    }
+
+    .photo {
+
+        &__img1 {
+            width: 200px;
+            position: relative;
+            left: 500px;
+            top: 250px;
+        }
+
+        &__img2 {
+            width: 280px;
+            height: 170px;
+            position: relative;
+            left: 1050px;
+            top: 340px;
+        }
+
+        &__img3 {
+            width: 310px;
+            position: relative;
+            left: 1270px;
+            top: -200px;
+            z-index: -1;
+        }
+    }
+
+    .about {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+
+
+        &__box {
+            margin: 180px 0;
+            width: 600px;
+        }
+
+        &__ttl {
+            font-size: 40px;
+            font-family: $sans;
+        }
+
+        &__txt {
+            font-size: 18px;
+            letter-spacing: 0.04em;
+            line-height: 2.2;
+            padding: 10px;
+            width: 550px;
+            font-family: $sans;
+        }
+
+        &__img {
+            width: 612px;
+        }
+    }
+
+    .deco1__pic {
+        position: absolute;
+        top: 225%;
+    }
+
+    .deco1__img {
+        width: 150px;
+        height: 390px;
+        object-fit: cover;
+        border-top-right-radius: 150px;
+        margin-bottom: 100px;
+    }
+
+    .approach {
+
+        &__box {
+            margin-bottom: 100px;
+        }
+
+
+        &__img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+
+
+        &__ttl {
+            margin: 30px 140px;
+            font-size: 40px;
+            font-family: $sans;
+        }
+
+        &__minittl {
+            margin: 0 140px;
+            font-size: 18px;
+            font-family: $sans;
+        }
+
+        &__txt {
+            width: 617px;
+            margin: 0 140px;
+            font-size: 18px;
+            letter-spacing: 0.04em;
+            line-height: 2.2;
+            font-family: $sans;
+        }
+
+        &__container {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+        }
+
+        &__minittlx {
+            margin-bottom: 10px;
+            font-family: $sans;
+        }
+
+        &__ttlx {
+            margin-bottom: 30px;
+            font-family: $sans;
+        }
+
+        &__txtx {
+            width: 320px;
+            line-height: 2.2;
+            letter-spacing: 0.04em;
+            font-family: $sans;
+        }
+
+        &__boxy {
+            position: relative;
+            bottom: 100px;
+        }
+
+        &__boxg {
+            position: relative;
+            bottom: 40px;
+        }
+
+        &__pic {
+            margin-bottom: 40px;
+        }
+
+        &__link {
+            background: #002B3D;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-family: $sans;
+        }
+
+        &__btn {
+            margin: 100px 370px;
+        }
+
+    }
+
+    .crops {
+
+
+
+        &__ttl {
+            text-align: center;
+            margin-bottom: 70px;
+            font-size: 40px;
+            font-family: $sans;
+        }
+
+        &__img {
+            margin: 0 0 0 150px;
+        }
+
+        &__box {
+            display: inline-block;
+            position: relative;
+            bottom: 380px;
+            left: 930px;
+        }
+
+        &__subtxt {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-family: $sans;
+        }
+
+        &__txt {
+            width: 670px;
+            letter-spacing: 0.04em;
+            line-height: 2.2;
+            font-family: $sans;
+        }
+
+        &__container {
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            top: -340px;
+            left: 787px;
+            width: 50%;
+            padding-left: 5%;
+        }
+
+        &__pic {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+    }
+
+    .staff {
+
+        margin-bottom: 200px;
+
+        &__ttl {
+            text-align: center;
+            font-size: 40px;
+            font-family: $sans;
+        }
+
+        &__subttl {
+            text-align: center;
+            font-size: 18px;
+            letter-spacing: 0.04em;
+            margin-bottom: 90px;
+            font-family: $sans;
+        }
+
+        &__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+        }
+
+        &__name {
+            margin-bottom: 30px;
+            font-size: 30px;
+            font-family: $sans;
+        }
+
+        &__txt {
+            width: 600px;
+            font-family: $sans;
+        }
+    }
+
+    .qa {
+        padding: 80px;
+        background: #002B3D;
+        margin-bottom: 100px;
+
+        &__txt {
+            text-align: center;
+            font-family: $sans;
+        }
+
+        &__link {
+            text-decoration: none;
+            font-size: 40px;
+            font-weight: bold;
+            color: #fff;
+            letter-spacing: 0.04em;
+            font-family: $sans;
+        }
+    }
+
+    .news {
+
+        margin-bottom: 100px;
+        font-family: $sans;
+
+        &__ttl {
+            text-align: center;
+            font-size: 40px;
+            font-family: $sans;
+        }
+
+
+        &__subttl {
+            text-align: center;
+            margin-bottom: 40px;
+            font-family: $sans;
+        }
+
+        &__container {
+            display: flex;
+            justify-content: center;
+            gap: 130px;
+            margin-bottom: 100px;
+        }
+
+        &__img {
+            width: 320px;
+        }
+
+        &__box {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        &__btn {
+            text-align: center;
+        }
+
+        &__link {
+            text-decoration: none;
+            color: #fff;
+            background: #002B3D;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+    }
+
+    .access {
+        margin-bottom: 100px;
+        background: #fff;
+        padding: 100px;
+        font-family: $sans;
+
+        &__ttl {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 50px;
+            font-family: $sans;
+        }
+
+        &__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 70px;
+            line-height: 25px;
+        }
+
+    }
+
+}
